@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a root guide – Manzoo Root</title><meta name="description" content="Root unbrick and fix your Android phone Pick your brand and model">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><style>
+.badge{position:relative;overflow:hidden;isolation:isolate}
+.badge .brand-logo{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:contain!important;display:block!important;z-index:2!important;border-radius:inherit!important;padding:2px!important;box-sizing:border-box!important;background:#fff!important}
+.badge.big .brand-logo{padding:3px!important}
+.badge .badge-fallback{position:relative;z-index:1}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+<nav class="glass"><a class="logo" href="index.html">Manzoo Root</a>
+<div class="links"><a href="index.html">Home</a><a href="brands.html">Brands</a><a href="request.html">Request</a><a href="root.html">What is root</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a data-tg href="https://t.me/The_manzooo" target="_blank" rel="noopener">Telegram</a></div>
+<a class="btn" href="request.html">Request root</a></nav>
+<main class="wrap" id="top"><section class="req glass sec" style="margin-top:44px">
+<h2>Request your root guide</h2><p>Fill in your phone details We reply on Telegram</p>
+<div class="pick glass" id="pick" hidden></div>
+<div class="notice">Rooting can void your warranty and erase your data Back up everything first We cannot guarantee results on every device</div>
+<form id="reqForm" novalidate>
+<input type="hidden" name="access_key" value="62012ca9-b3ed-4c4e-aff3-1d16d167b1f9"><input type="hidden" name="subject" value="New phone root request – Manzoo Root"><input type="hidden" name="from_name" value="Manzoo Root Website"><input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+<fieldset><legend>What do you need?</legend><div class="chips" role="group" aria-label="Request type">
+<label><input type="radio" name="request_type" value="Root" checked><span>Root</span></label><label><input type="radio" name="request_type" value="Unbrick"><span>Unbrick</span></label><label><input type="radio" name="request_type" value="Unlock bootloader"><span>Unlock bootloader</span></label><label><input type="radio" name="request_type" value="Custom ROM"><span>Custom ROM</span></label><label><input type="radio" name="request_type" value="Other"><span>Other</span></label></div></fieldset>
+<fieldset><legend>Your phone</legend><div class="grid">
+<div><label for="brand">Brand</label><select id="brand" name="brand" required><option value="">Select brand</option><option>Xiaomi</option><option>Redmi</option><option>POCO</option><option>Samsung</option><option>Realme</option><option>Oppo</option><option>Vivo</option><option>OnePlus</option><option>Motorola</option><option>Infinix</option><option>Tecno</option><option>Nokia</option><option>Google Pixel</option><option>Asus</option><option>Sony</option><option>Nothing</option><option>Red Magic</option><option>Fairphone</option><option>Other brand</option></select></div>
+<div><label for="model">Model</label><input id="model" name="model" list="models" required placeholder="Start typing your model" autocomplete="off"><datalist id="models"></datalist></div>
+<div><label for="variant">Variant / region <span class="hint">(optional)</span></label><input id="variant" name="variant" placeholder="Global India 8/128GB"></div>
+<div><label for="android">Android version <span class="hint">(optional)</span></label><input id="android" name="android_version" placeholder="Android 14"></div>
+<div><label for="bl">Bootloader status</label><select id="bl" name="bootloader_status"><option>I don't know</option><option>Locked</option><option>Already unlocked</option></select></div>
+<div><label for="state">Phone condition</label><select id="state" name="phone_condition"><option>Working normally</option><option>Bootloop</option><option>Stuck on logo / bricked</option><option>Won't turn on</option></select></div>
+<div class="full"><label for="notes">Anything else? <span class="hint">(optional)</span></label><textarea id="notes" name="notes" placeholder="Build number what you already tried error messages…"></textarea></div></div></fieldset>
+<fieldset><legend>How can we reach you?</legend><div class="grid"><div><label for="tg">Telegram username</label><input id="tg" name="telegram" required placeholder="@yourname"></div><div><label for="name">Your name <span class="hint">(optional)</span></label><input id="name" name="name" placeholder="Name"></div></div></fieldset>
+<button class="btn send" id="btn" type="submit">Send request</button><div id="status" role="status" aria-live="polite"></div></form></section>
+<footer>© Manzoo Root · <a data-tg href="https://t.me/The_manzooo" style="text-decoration:underline">Telegram</a></footer></main>
+<a class="fab" data-tg href="https://t.me/The_manzooo" target="_blank" rel="noopener" aria-label="Chat on Telegram">💬 <span>Chat on Telegram</span></a>
+<script src="config.js"></script><script src="models.js"></script><script src="app.js"></script></body></html>
